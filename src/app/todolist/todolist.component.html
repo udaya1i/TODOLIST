@@ -1,0 +1,8 @@
+<h1>TODO LIST</h1>
+<input type="text" placeholder="Enter a text here" #click>
+<br><br>
+<button (click)="gotclicked(click.value)">Add Task</button>
+<ul *ngFor="let tasks of listoftask">
+    <li>{{tasks.name}} <button (click)="deleteit(tasks.id)">Remove it</button></li>
+</ul>
+
